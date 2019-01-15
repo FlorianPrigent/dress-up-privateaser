@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='UTF-8'/>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <div id="bar">
+
+      <div id="titre"><h1>Privateaser</h1></div>
+
+    <form id="bar">
+      <label for="Bar name">Bar Name</label>
       <input class="js-name" type="text" placeholder="Bar name"/>
+      <label for="Price by hour">Price By Hour</label>
       <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+      <label for="Price by person">Price By Person</label>
       <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
+    </form>
+
     <div id="booker">
+      <label for="Booker name">Booker Name</label>
       <input class="js-name" type="text" placeholder="Booker name"/>
+      <label for="Time in h">Time In h</label>
       <input class="js-time" type="number" placeholder="Time in h"/>
+      <label for="Persons">Persons</label>
       <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+
+    <div>
+      <label for="DeductibleOption">Has the customer subscribed to the option?</label>
+      <input id="DeductibleOption" class="js-option" type="checkbox" placeholder="Deductible option"/>
+    </div>
+      
+    <div>
+      <button id="compute">Compute</button>
+    </div>
+    
     <div id="actors"></div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
